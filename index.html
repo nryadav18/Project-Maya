@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Main || TechnicalHub</title>
+    <link rel="shortcut icon" href="./assets/favIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <!-- External Font, Icon Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Customised Animations Stylings Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body> 
+    <!-- onmousemove="mouseMove(event)"  (Write it inside the Body Tag)-->
+    <!-- <div class="mouseParent" style="position: fixed; top:0px;left:0px">
+        <div class="mouseChild"></div>
+    </div> -->
+    <header id="hdr">
+        <a href="#first">  
+            <div class="leftLogo">
+                <img src="./assets/thubLogo2.png" alt="" class="logo">
+            </div>
+        </a>
+        <div class="rightNav">
+            <div class="home">Home</div>
+            <div class="dashboard">Dashboard</div>
+            <div class="contact">Contact</div>
+        </div>
+        <div class="login">
+            <div class="loginButton"><p>Login&nbsp;<i class="fa-solid fa-arrow-right"></i></p></div>
+        </div>
+        <div class="threebars" onclick="openSidebar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <div id="sidebar" >
+        <div class="sbt">
+            <img src="./assets/thubLogo2.png" alt="">
+            <i onclick="closeSidebar()" class="fa-solid fa-x"></i>
+        </div>
+        <div class="sbb">
+            <div class="home">Home</div>
+            <div class="dashboard">Dashboard</div>
+            <div class="contact">Contact</div>
+        </div>
+    </div>
+    <div id="first">
+        <img src="./assets/trained_by_us.png" alt="" class="img1" data-aos="fade-up" data-aos-duration="1500">
+        <img src="./assets/girls1.png" alt="" class="img2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+        <div class="toggle">
+            <input type="checkbox" id="modeToggle" hidden>
+            <div class="lb" onclick="document.getElementById('modeToggle').click()">
+                <p class="one" style="rotate: 360deg;">Dark</p>
+                <p class="two" style="rotate: 360deg;">Light</p>
+            </div>
+            <i id="moon" onclick="document.getElementById('modeToggle').click()" class="fa-solid fa-moon"></i>
+            <i id="sun" onclick="document.getElementById('modeToggle').click()" class="fa-regular fa-sun"></i>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+            <div class="ct">
+                <p>Since 2016</p>
+            </div>
+            <div class="cb">
+                <img src="./assets/thubLogo.png" style="margin-right: 20px;" alt="">
+                <p><span>60+</span><br>Tech Coaches</p>
+            </div>
+        </div>
+    </div>
+    <div class="second">
+        <div class="ic1">
+            <div class="li">
+                <div class="cir"><i class="fa-solid fa-laptop-file" style="overflow-y: hidden;"></i></div>
+            </div>
+            <div class="rc">100+ <br> Courses</div>
+        </div>
+        <div class="ic2">
+            <div class="li">
+                <div class="cir"><i class="fa-solid fa-person-chalkboard" style="overflow-y: hidden;"></i></div>
+            </div>
+            <div class="rc">Top <br> Instructors</div>
+        </div>
+        <div class="ic3">
+            <div class="li">
+                <div class="cir"><i class="fa-solid fa-award" style="overflow-y: hidden;"></i></div>
+            </div>
+            <div class="rc">Global <br> Certifications</div>
+        </div>
+        <div class="ic4">
+            <div class="li">
+                <div class="cir"><i class="fa-solid fa-users-viewfinder" style="overflow-y: hidden;"></i></div>
+            </div>
+            <div class="rc">30000 <br> Trainees</div>
+        </div>
+    </div>
+    <div class="third">
+        <div class="tcenter">
+            <p data-aos="zoom-in-up" data-aos-duration="700">Top Categories</p>
+            <img src="./assets/greenUnderline.png" alt="" class="sign" data-aos="fade-up" data-aos-duration="700">
+            <div class="logoblock">
+                <div class="firb" data-aos="fade-up" data-aos-duration="700">
+                    <div class="leftblock">
+                        <img src="./assets/technology.png" alt="">
+                    </div>
+                    <div class="rightblock">
+                        <p>Technology Training</p>
+                    </div>
+                </div>
+                <div class="secb" data-aos="fade-up" data-aos-duration="700">
+                    <div class="leftblock">
+                        <img src="./assets/coding.png" alt="">
+                    </div>
+                    <div class="rightblock">
+                        <p>Coding</p>
+                    </div>
+                </div>
+                <div class="thib" data-aos="fade-up" data-aos-duration="700">
+                    <div class="leftblock">
+                        <img src="./assets/apt-logic.png" alt="">
+                    </div>
+                    <div class="rightblock">
+                        <p>Apt logic</p>
+                    </div>
+                </div>
+                <div class="foub" data-aos="fade-up" data-aos-duration="700">
+                    <div class="leftblock">
+                        <img src="./assets/communication.png" alt="">
+                    </div>
+                    <div class="rightblock">
+                        <p>Communication</p>
+                    </div>
+                </div>
+                <div class="fivb" data-aos="fade-up" data-aos-duration="700">
+                    <div class="leftblock">
+                        <img src="./assets/profile.png" alt="">
+                    </div>
+                    <div class="rightblock">
+                        <p>Profile Building</p>
+                    </div>
+                </div>
+                <div class="sixb" data-aos="fade-up" data-aos-duration="700">
+                    <div class="leftblock">
+                        <img src="./assets/placements.png" alt="">
+                    </div>
+                    <div class="rightblock">
+                        <p>Placements</p>
+                    </div>
+                </div>
+                <div class="sevb" data-aos="fade-up" data-aos-duration="700">
+                    <div class="leftblock">
+                        <img src="./assets/certification.png" alt="">
+                    </div>
+                    <div class="rightblock">
+                        <p>Certifications</p>
+                    </div>
+                </div>
+                <div class="eigb" data-aos="fade-up" data-aos-duration="700">
+                    <div class="leftblock">
+                        <img src="./assets/internsip.png" alt="">
+                    </div>
+                    <div class="rightblock">
+                        <p>Internships</p>
+                    </div>
+                </div>
+                <div class="ninb" data-aos="fade-up" data-aos-duration="700">
+                    <div class="leftblock">
+                        <img src="./assets/projectspace.png" alt="">
+                    </div>
+                    <div class="rightblock">
+                        <p>Project Space</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tdown">
+            <div class="tdleft">
+                <div class="tdtcard1" data-aos="fade-down" data-aos-duration="700">
+                    <video src="./assets/Technical Hub _ Drive Ready(1080P_HD).mp4#t=41.68,200" muted autoplay loop></video>
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                </div>
+                <img src="./assets/girls2.png" alt="">
+                <div class="tdtcard2">
+                    <div class="tdtcardleft">
+                        <div class="tdtcir">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                    </div>
+                    <div class="tdtcardright">
+                        <p><span>50+</span><br>Certifications</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tdright" data-aos="fade-left" data-aos-duration="1000">
+                <p>ABOUT US</p>
+                <p>Learn & Grow with</p>
+                <p>Technical Hub</p>
+                <img src="./assets/greenUnderline.png" alt="" class="sign">
+                <p>Unlock new horizons and enhance your expertise with Technical Hub.
+                Dive into a treasure trove of resources, tutorials, and courses specially 
+                curated to help you learn and grow your skills. Whether you're a beginner 
+                or a seasoned professional, Technical Hub provides a unique platform designed 
+                to help you stay ahead in your field. Join our community and start your journey 
+                to success today!</p>
+                <p><span class="tick"><i class="fa-solid fa-check"></i></span> &nbsp;&nbsp;&nbsp; Industry Standard Training</p>
+                <p><span class="tick"><i class="fa-solid fa-check"></i></span> &nbsp;&nbsp;&nbsp; Global Certifications</p>
+                <p><span class="tick"><i class="fa-solid fa-check"></i></span> &nbsp;&nbsp;&nbsp; 100% Placement Assisstance</p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="four"></div> -->
+    <div class="fourth" id="fourth">
+        <p>POPULAR COURSES</p>
+        <p>Pick A Course To Get Started</p>
+        <!-- <img src="./assets/greenUnderline.png" alt="" class="sign" data-aos="fade-up" data-aos-duration="700"> -->
+        <div class="courses" id="courses">
+            <div class="courseCard">
+                <img src="https://maya.technicalhub.io/assets/images/course/course-01/aws-development.png" alt="">
+                <p>Advanced</p>
+                <p>AWS Development</p>
+                <p> <i class="fa fa-list-alt" aria-hidden="true"></i> &nbsp;&nbsp;13 Modules &nbsp;&nbsp;
+                    <i class="fa-solid fa-clock"> &nbsp;&nbsp;</i>200+ Hours
+                </p>
+            </div>
+            <div class="courseCard">
+                <img src="https://maya.technicalhub.io/assets/images/course/course-01/flutter.png" alt="">
+                <p>Advanced</p>
+                <p>Google Flutter</p>
+                <p> <i class="fa fa-list-alt" aria-hidden="true"></i> &nbsp;&nbsp;15 Modules &nbsp;&nbsp;
+                    <i class="fa-solid fa-clock"> &nbsp;&nbsp;</i>200+ Hours
+                </p>
+            </div>
+            <div class="courseCard">
+                <img src="https://maya.technicalhub.io/assets/images/course/course-01/react-native.png" alt="">
+                <p>Advanced</p>
+                <p style="font-size: 20px;">FSD with React Native</p>
+                <p> <i class="fa fa-list-alt" aria-hidden="true"></i> &nbsp;&nbsp;18 Modules &nbsp;&nbsp;
+                    <i class="fa-solid fa-clock"> &nbsp;&nbsp;</i>200+ Hours
+                </p>
+            </div>
+            <div class="courseCard">
+                <img src="https://maya.technicalhub.io/assets/images/course/course-01/Gen-AI.png" alt="">
+                <p>Advanced</p>
+                <p>Generative AI</p>
+                <p> <i class="fa fa-list-alt" aria-hidden="true"></i> &nbsp;&nbsp;20 Modules &nbsp;&nbsp;
+                    <i class="fa-solid fa-clock"> &nbsp;&nbsp;</i>200+ Hours
+                </p>
+            </div>
+            <div class="courseCard" id="cc1">
+                <img src="https://maya.technicalhub.io/assets/images/course/course-01/VLSI.png" alt="">
+                <p>Advanced</p>
+                <p>VLSI</p>
+                <p> <i class="fa fa-list-alt" aria-hidden="true"></i> &nbsp;&nbsp;35 Modules &nbsp;&nbsp;
+                    <i class="fa-solid fa-clock"> &nbsp;&nbsp;</i>200+ Hours
+                </p>
+            </div>
+            <div class="courseCard" id="cc2">
+                <img src="https://maya.technicalhub.io/assets/images/course/course-01/pega.png" alt="">
+                <p>Advanced</p>
+                <p>PEGA</p>
+                <p> <i class="fa fa-list-alt" aria-hidden="true"></i> &nbsp;&nbsp;12 Modules &nbsp;&nbsp;
+                    <i class="fa-solid fa-clock"> &nbsp;&nbsp;</i>200+ Hours
+                </p>
+            </div>
+            <div class="courseCard" id="cc3">
+                <img src="https://maya.technicalhub.io/assets/images/course/course-01/data-analytics.png" alt="">
+                <p>Advanced</p>
+                <p style="font-size: 20px;">Data Analytics</p>
+                <p> <i class="fa fa-list-alt" aria-hidden="true"></i> &nbsp;&nbsp;20 Modules &nbsp;&nbsp;
+                    <i class="fa-solid fa-clock"> &nbsp;&nbsp;</i>200+ Hours
+                </p>
+            </div>
+            <div class="courseCard" id="cc4">
+                <img src="https://maya.technicalhub.io/assets/images/course/course-01/aws-cloud-devops.png" alt="">
+                <p>Advanced</p>
+                <p>AWS Cloud DevOps</p>
+                <p> <i class="fa fa-list-alt" aria-hidden="true"></i> &nbsp;&nbsp;20 Modules &nbsp;&nbsp;
+                    <i class="fa-solid fa-clock"> &nbsp;&nbsp;</i>200+ Hours
+                </p>
+            </div>
+        </div>
+        <div class="browse">
+            <div class="browseMore" onclick="browseMore()"><p id="browseText">Browse more Courses...</p></div>
+        </div>
+    </div>
+    <!-- My Local JS Link -->
+    <script src="home.js"></script>
+    <!-- Customised Animations Script Link -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="module">AOS.init();</script>
+</body>
+</html>
