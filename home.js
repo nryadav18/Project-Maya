@@ -1,7 +1,3 @@
-
-
-
-
 // An Arrow Function to Open Sidebar
 openSidebar = () => {
     var sb = document.getElementById('sidebar')
